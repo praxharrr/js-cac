@@ -54,3 +54,17 @@ const newArr2 = myArr.join("-"); // join all elements of the array into a string
 
 console.log(myArr.join("-")); // 100-1-2-3-4-5-true-prakhar
 console.log(typeof newArr2); // string
+//by using join method the elements of the array are joined by the specified separator and returned as a string which gives us output in form of string instead of array 
+console.log(newArr2); // 100-1-2-3-4-5-true-prakhar
+
+// slice and splice methods
+// slice method is used to extract a portion of the array and returns a new array
+const slicedArr = myArr.slice(2,5); // extracts elements from index 2 to 4
+console.log(slicedArr); // [ 2, 3, 4 ] 
+
+// splice method is used to add or remove elements from the array
+myArr.splice(2,2,20,30) // removes 2 elements starting from index 2 and adds 20 and 30 at those positions
+console.log(myArr); // [ 100, 1, 20, 30, 4, 5, true, 'prakhar' ]
+
+// length property to find the length of the array
+console.log(myArr.length) // 8
